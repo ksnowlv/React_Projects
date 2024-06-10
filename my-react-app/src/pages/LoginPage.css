@@ -1,0 +1,100 @@
+.login-container {
+    text-align:center;
+   }
+   
+   .logo-container {
+    margin-top:80px;
+    /* width: 50px;
+    height: 50px;; */
+   }
+   .logo {
+    width: 150px;
+    height: 150px;
+   }
+
+   .app {
+    margin-top:20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #BECEFA;
+    font-weight:bold;/* 设置字体为粗体 */
+   }
+   
+   
+   .input-container {
+    background-color:#F0F5FD;
+    margin:0 40px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+   }
+   
+   .input-wrapper {
+    display:flex;
+    align-items:center;
+   }
+   
+   .input-wrapper img {
+    margin-left:20px;
+   }
+   
+   input {
+    flex:1;
+    border:none;
+    background:none;
+    outline:none;
+    /* background-color:#A0ACD4; */
+    font-size:20px;
+    color:#A0ACD4;/* 输入框中文字的颜色 */
+   }
+
+   .inputField::placeholder {
+    color:#A0ACD4;/* 输入框中文字的颜色 */
+   }
+   
+   .passwordField::placeholder {
+    color:#A0ACD4;/* 输入框中文字的颜色 */
+   }
+   
+   .login-button {
+    height:60px;
+    width:80%;
+    margin-bottom:10px;
+    margin-top: 60px;
+    background-color: #5B70CF;
+    font-size:20px;
+    color: white;
+    border:none;
+   }
+   .register-button {
+    height:60px;
+    width:80%;
+    margin-bottom:10px;
+    margin-top: 20px;
+    background-color: #F8644E;
+    font-size: 20px;
+    color: white;
+    border:none;
+   }
+   
+   .other-login-text {
+    margin-top: 60px;
+    margin-bottom:20px;
+    text-align:center;
+    font-size: 16px;
+    color: #D5DFF2;
+   }
+   
+   .social-icons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+   }
+   
+   .social-icons img {
+    margin:0 10px;
+    width: 40px;
+    height: 40px;
+   }

@@ -7,6 +7,7 @@ import LikeButton from './components/LikeButton';
 import ShoppingList from './pages/ShoppingList';
 import { useState } from 'react';
 import PackingList from './pages/PackingList';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +32,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <LoginPage>
+
+      </LoginPage>
 
       <AboutPage />
       <h2>测试不同按钮间共享count计数</h2>
