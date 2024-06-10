@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import AboutPage from './pages/AboutPage';
 import MyButton from './components/MyButton';
-import Profile from './pages/Profile';
+import Gallery from './pages/Gallery';
 import LikeButton from './components/LikeButton';
 import ShoppingList from './pages/ShoppingList';
 import { useState } from 'react';
@@ -36,7 +36,7 @@ function App() {
       <MyButton count={count} onClick={handleOnClick}/> 
       <MyButton count={count} onClick={handleOnClick}/> 
       <MyButton count={count} onClick={handleOnClick}/>
-      <Profile/>
+      <Gallery/>
       <LikeButton/>
       <ShoppingList/>
     </div>
