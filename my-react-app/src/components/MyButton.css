@@ -1,0 +1,11 @@
+
+/* App.css */
+.myButton {
+    background-color: #a82c34; /* 设置背景颜色 */
+    color: white; /* 设置字体颜色 */
+    border: none; /* 移除边框 */
+    padding: 10px 20px; /* 添加一些内边距 */
+    cursor: pointer; /* 更改鼠标指针样式当用户悬停在按钮上 */
+    
+    margin: 10px 0;/* 设置上下间距为10像素 */
+  }   
