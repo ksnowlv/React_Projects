@@ -6,6 +6,7 @@ import Gallery from './pages/Gallery';
 import LikeButton from './components/LikeButton';
 import ShoppingList from './pages/ShoppingList';
 import { useState } from 'react';
+import PackingList from './pages/PackingList';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +40,7 @@ function App() {
       <Gallery/>
       <LikeButton/>
       <ShoppingList/>
+      <PackingList/>
     </div>
   );
 }
