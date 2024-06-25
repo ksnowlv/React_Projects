@@ -1,27 +1,20 @@
 import React from "react"
 import "./LoginPage.css"
 
+
+const handleLoginPageOnClick = (eventName: string) => {
+  console.log(eventName + " click");
+};
+
 const LoginPage: React.FC = () => {
 
-  function handleLoginClick() {
-    console.log("login click")
-  }
+  const handleLoginClick = () => handleLoginPageOnClick("login");
 
-  function handleRegisterClick() {
-    console.log("register click")
-  }
+  const handleRegisterClick = () => handleLoginPageOnClick("register");
 
-  function handleWechatClick() {
-    console.log("wechat click")
-  }
-
-  function handleQQClick() {
-    console.log("QQ click")
-  }
-
-  function handleWeboClick() {
-    console.log("Weibo click")
-  }
+  const handleWechatClick = () => handleLoginPageOnClick("wechat")
+  const handleQQClick = () => handleLoginPageOnClick("qq");
+  const handleWeiboClick = () => handleLoginPageOnClick("weibo");
 
   return (
     <div className="login-container">
@@ -32,13 +25,13 @@ const LoginPage: React.FC = () => {
       <div className="input-container">
         <div className="input-wrapper">
           <img src="login_page/account.png" alt="Username Icon" />
-          <input type="text" placeholder="请输入账号" className="inputField" />
+          <input type="text" placeholder="请输入账号" />
         </div>
       </div>
       <div className="input-container">
         <div className="input-wrapper">
           <img src="login_page/password.png" alt="Password Icon" />
-          <input type="password" placeholder="请输入密码" className="inputField passwordField" />
+          <input type="password" placeholder="请输入密码"  />
         </div>
       </div>
       <button className="login-button" onClick={handleLoginClick}>登陆</button>
@@ -47,7 +40,7 @@ const LoginPage: React.FC = () => {
       <div className="social-icons">
         <img src="login_page/wechat.png" alt="WeChat" onClick={handleWechatClick} />
         <img src="login_page/qq.png" alt="QQ" onClick={handleQQClick} />
-        <img src="login_page/weibo.png" alt="Weibo" onClick={handleWeboClick} />
+        <img src="login_page/weibo.png" alt="Weibo" onClick={handleWeiboClick} />
       </div>
 
     </div>

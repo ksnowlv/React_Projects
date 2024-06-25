@@ -1,100 +1,118 @@
+:root {
+    --primary-color: #5B70CF;
+    --secondary-color: #F8644E;
+    --input-color: #A0ACD4;
+    --background-color: #F0F5FD;
+    --text-color: #D5DFF2;
+    --font-size: 20px;
+}
+
 .login-container {
-    text-align:center;
-   }
-   
-   .logo-container {
-    margin-top:80px;
-    /* width: 50px;
-    height: 50px;; */
-   }
-   .logo {
+    text-align: center;
+}
+
+.logo-container {
+    margin-top: 8vh; 
+}
+
+/* 如果需要更细致的控制，例如在小屏幕设备上调整边距，可以使用媒体查询 */
+/* 以下是一个示例，可以根据实际需要进行调整 */
+@media (max-width: 600px) {
+    .logo-container {
+        margin-top: 15%; /* 在小屏幕设备上，可能需要更大的边距 */
+    }
+}
+
+
+.logo {
     width: 150px;
     height: 150px;
-   }
+}
 
-   .app {
-    margin-top:20px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    color: #BECEFA;
-    font-weight:bold;/* 设置字体为粗体 */
-   }
-   
-   
-   .input-container {
-    background-color:#F0F5FD;
-    margin:0 40px;
-    height:60px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    margin-bottom:20px;
-   }
-   
-   .input-wrapper {
-    display:flex;
-    align-items:center;
-   }
-   
-   .input-wrapper img {
-    margin-left:20px;
-   }
-   
-   input {
-    flex:1;
-    border:none;
-    background:none;
-    outline:none;
-    /* background-color:#A0ACD4; */
-    font-size:20px;
-    color:#A0ACD4;/* 输入框中文字的颜色 */
-   }
-
-   .inputField::placeholder {
-    color:#A0ACD4;/* 输入框中文字的颜色 */
-   }
-   
-   .passwordField::placeholder {
-    color:#A0ACD4;/* 输入框中文字的颜色 */
-   }
-   
-   .login-button {
-    height:60px;
-    width:80%;
-    margin-bottom:10px;
-    margin-top: 60px;
-    background-color: #5B70CF;
-    font-size:20px;
-    color: white;
-    border:none;
-   }
-   .register-button {
-    height:60px;
-    width:80%;
-    margin-bottom:10px;
+.app {
     margin-top: 20px;
-    background-color: #F8644E;
-    font-size: 20px;
+    margin-bottom: 50px;
+    font-size: var(--font-size);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.input-container {
+    background-color: var(--background-color);
+    margin: 0 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* 使用gap代替margin进行元素间距设置，需要浏览器支持 */
+    /* gap: 20px; */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.input-wrapper img {
+    margin-left: 20px; /* 考虑使用gap代替margin-left */
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    border: none; /* 保留一个透明边框以提供视觉反馈 */
+    background: none;
+    outline: none;
+    font-size: var(--font-size);
+    color: var(--input-color);
+}
+
+input:focus {
+    border-color: none
+}
+
+/* 合并重复的placeholder样式 */
+.placeholder-text {
+    color: var(--input-color);
+}
+
+.login-button, .register-button {
+    height: 60px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+    font-size: var(--font-size);
     color: white;
-    border:none;
-   }
-   
-   .other-login-text {
+    border: none;
+}
+
+.login-button {
     margin-top: 60px;
-    margin-bottom:20px;
-    text-align:center;
+}
+
+.register-button {
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+}
+
+.other-login-text {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
     font-size: 16px;
-    color: #D5DFF2;
-   }
-   
-   .social-icons {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-   }
-   
-   .social-icons img {
-    margin:0 10px;
+    color: var(--text-color);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons img {
+    margin: 0 10px;
     width: 40px;
     height: 40px;
-   }
+}
